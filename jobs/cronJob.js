@@ -6,7 +6,7 @@ const fetchCryptoData = require('../services/fetchCryptoData');
 //     console.log('Running the crypto data fetch job...');
 //     fetchCryptoData();
 // });
-cron.schedule('10 * * * *', () => { // Runs every 10 minutes
+cron.schedule('* * * * *', () => { // Runs every 10 minutes
     console.log('Running the crypto data fetch job...');
     fetchCryptoData();
 });

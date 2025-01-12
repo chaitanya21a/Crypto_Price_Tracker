@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-// Define the schema for the cryptocurrency data
 const cryptoSchema = new mongoose.Schema({
     name: { type: String, required: true }, // Name of the cryptocurrency (e.g., Bitcoin)
     price: { type: Number, required: true }, // Current price in USD
